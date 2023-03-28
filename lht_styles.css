@@ -142,6 +142,28 @@ table > tbody > td {
        width: 1/7px
 }
 
+td {
+   border: 1px dotted gray;
+   color: rgb(11, 12, 145);
+   position: relative;
+   padding: 10px;
+   padding-left: 0px;
+   min-height: 40px;
+   text-align: center;
+}
+
+td:nth-child(odd) {
+   color:rgb(255, 235, 178);
+   border: 2px solid gray;
+}
+
+data-date {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   width: 40%;
+}
+
 /* ===============================
    Mobile Styles: 0px to 640px 
    ===============================
@@ -184,14 +206,13 @@ table > tbody > td {
       width: 100%;
    }
 
-   table, tbody, tr, td, th, caption {
+   table, tbody, tr, td, th, caption, data-date {
       display: default;
    }
 
-   thead h1 {
-      display: hidden;
-   }
-   
+   td h1 {
+      display: none;
+   }   
 }
 
 
@@ -208,6 +229,10 @@ table > tbody > td {
       justify-content: center;
    }
    
+   data-date {
+      display: none;
+   }
+
    header nav ul li {
       flex: 0 1 auto;
    }
