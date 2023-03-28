@@ -1,3 +1,6 @@
+<table id="calendar">
+
+
 Lyman Hall Theater Schedule of Events
 
 August 29
